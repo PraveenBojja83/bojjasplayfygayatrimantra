@@ -1,0 +1,14 @@
+.music-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 120px;
+  margin: 0 auto 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+}
+
+.music-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}

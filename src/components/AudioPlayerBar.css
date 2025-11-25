@@ -1,0 +1,15 @@
+.audio-player-bar-native {
+  max-width: 380px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.audio-player-bar-native audio {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}

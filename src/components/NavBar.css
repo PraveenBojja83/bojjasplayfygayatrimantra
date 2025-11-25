@@ -1,0 +1,37 @@
+nav {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #121212, #5b5a5a);
+  padding: 10px 10px;
+  box-shadow: inset 0 -1px 1px rgb(255 255 255 / 0.7);
+  height: 10vh;
+  width: 10vh;
+  margin: 5px auto;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav h2 {
+  font-size: 1.25rem;
+  color: rgb(153, 247, 2);
+
+}
+
+nav button {
+  padding: 2px 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #45a049;
+}

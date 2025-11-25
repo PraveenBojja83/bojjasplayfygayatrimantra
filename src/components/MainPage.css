@@ -1,0 +1,45 @@
+main {
+  background: #7a5353;
+  border-radius: 10px;
+  padding: 2px;
+  width: auto;
+  margin: 2px auto;
+  text-align: center;
+  
+}
+
+
+main h4 {
+  width: 50%;
+  font-weight: normal;
+  color: #ebe5e5;
+  margin-bottom: 2px;
+  margin: 0 auto;
+  align-content: center;
+}
+.audio-player-bar-native {
+  width: 50%;
+  margin: 10px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.audio-player-bar-native audio {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #1c1d21;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  /* Remove arrows on input range in some browsers if needed */
+}
+
+/* Responsive: shrink on very small screens */
+@media (max-width: 300px) {
+  .audio-player-bar-native {
+    max-width: 95vw;
+  }
+}

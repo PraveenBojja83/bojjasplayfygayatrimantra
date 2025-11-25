@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between; /* Spread left, center, right items */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2c2b2b;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  height: 10vh; /* Fixed height for consistent layout */
+  width: 90vw;
+}
+
+header img {
+  border-radius: 50%;
+  height: 40px; /* Logo height */
+  width: auto;
+  animation: blink 3s infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center; /* Center the company name */
+  color: #4b4949;
+}

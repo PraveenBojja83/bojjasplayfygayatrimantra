@@ -1,0 +1,95 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* example gradient */
+  box-sizing: border-box;
+}
+
+/* Layout container for your app */
+.app-layout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2vh; /* Equal margin all around (adjust as needed) */
+}
+
+/* Each bar and section uses fixed vh */
+header {
+  height: 10vh;
+  min-height: 50px;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  min-height: 40px;
+  width: 100%;
+}
+
+main {
+  height: 80vh;
+  width: 100%;
+  overflow-y: auto; /* Allows scrolling main if content overflows */
+}
+
+footer {
+  height: 10vh;
+  min-height: 40px;
+  width: 100%;
+}
+
+/* Optional: remove extra scroll bars or overflow issues */
+header, nav, main, footer {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .app-layout {
+    padding: 1vh; /* Reduce margin for smaller screens */
+  }
+  
+  header, nav, footer {
+    height: 9vh;
+    min-height: 36px;
+  }
+
+  main {
+    height: 75vh;
+    padding: 4px;
+    max-width: 100vw;
+    font-size: 0.8em;
+  }
+
+  h2, h4 {
+    font-size: 1.0em;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
+/* For audio player and buttons on mobile */
+@media (max-width: 600px) {
+  .audio-player-bar-native {
+    max-width: 98vw;
+    margin: 12px auto;
+  }
+  .audio-player-bar-native audio {
+    width: 100%;
+    min-width: 70vw;
+  }
+}
+
+button, audio {
+  border-radius: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 0.5em;
+  cursor: pointer;
+}
